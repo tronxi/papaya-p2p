@@ -46,7 +46,7 @@ pdflatex:
 	-bibtex $(NOMBRE_SALIDA)
 	-glosstex $(NOMBRE_LATEX) $(FICHEROS_GLOSARIO)
 	-makeindex $(NOMBRE_SALIDA).gxs -o $(NOMBRE_SALIDA).glx -s glosstex.ist
-#	-makeindex $(NOMBRE_LATEX)   Si tuvieras índice de palabras (mira preambulo.tex)
+#	-makeindex $(NOMBRE_LATEX)   Si tuvieras ?ndice de palabras (mira preambulo.tex)
 	pdflatex -jobname=$(NOMBRE_SALIDA) $(NOMBRE_LATEX)
 	pdflatex -jobname=$(NOMBRE_SALIDA) $(NOMBRE_LATEX)
 # El gui?n en cualquier comando indica que si dicho comando falla
